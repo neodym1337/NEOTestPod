@@ -16,11 +16,10 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NEOTestPod"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Private cocoapod."
   s.description  = "Private test pod with spec repo, just example code in this pod. Private test pod with spec repo, just example code in this pod. Private test pod with spec repo, just example code in this pod."
   s.homepage     = "http://www.github.com/neodym1337"
-  s.module_name  = "NEOTestPod" 
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   # This description is used to generate tags and improve search results.
@@ -93,8 +92,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Classes/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
