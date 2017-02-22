@@ -6,7 +6,8 @@ platform :ios do
     desc "Release a version of library"
 
     lane :deploy do
-        sh "fastlane deploy --env test"
+        sh "fastlane deploy_env --env test"
+    end
   
     lane :deploy_env do 
 
