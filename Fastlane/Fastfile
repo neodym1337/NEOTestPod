@@ -23,6 +23,11 @@ platform :ios do
 
         #Commit and push podspec and tag changes
         git_commit(path: podspec_path, message: "Bumped to version #{version}")
+        # Add tag (Here we could use github_release command when we have GitHub)
+        add_git_tag(tag: version)
+
+
+
         push_to_git_remote(remote_branch: 'master', force: false, tags: true)
 
         #Fetch tags locally
