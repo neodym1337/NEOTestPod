@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFE2BBEA9700B7B3B3B2BBB /* libPods-NEOTestPodTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7445534321E27207BAAC1784 /* libPods-NEOTestPodTests.a */; };
+		A65F00AB57042D6FA6F603FD /* libPods-NEOTestPod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB889F594A794409A631D05 /* libPods-NEOTestPod.a */; };
+		D8D729121E5D86CB000BE7E6 /* NEOTestPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D729081E5D86CB000BE7E6 /* NEOTestPod.framework */; };
+		D8D729171E5D86CB000BE7E6 /* NEOTestPodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D729161E5D86CB000BE7E6 /* NEOTestPodTests.m */; };
+		D8D729191E5D86CB000BE7E6 /* NEOTestPod.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D7290B1E5D86CB000BE7E6 /* NEOTestPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8D729251E5D871E000BE7E6 /* NEOStringFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D729231E5D871E000BE7E6 /* NEOStringFormatter.h */; };
+		D8D729261E5D871E000BE7E6 /* NEOStringFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D729241E5D871E000BE7E6 /* NEOStringFormatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8D729131E5D86CB000BE7E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D728FF1E5D86CB000BE7E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D729071E5D86CB000BE7E6;
+			remoteInfo = NEOTestPod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30CF174DD5A695CD90B98F7F /* Pods-NEOTestPodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEOTestPodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEOTestPodTests/Pods-NEOTestPodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7445534321E27207BAAC1784 /* libPods-NEOTestPodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NEOTestPodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB889F594A794409A631D05 /* libPods-NEOTestPod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NEOTestPod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA59517B943A2E8BAFE2C52E /* Pods-NEOTestPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEOTestPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEOTestPod/Pods-NEOTestPod.release.xcconfig"; sourceTree = "<group>"; };
+		C0854667904C76FDBC8BFE6A /* Pods-NEOTestPodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEOTestPodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEOTestPodTests/Pods-NEOTestPodTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8D729081E5D86CB000BE7E6 /* NEOTestPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NEOTestPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D7290B1E5D86CB000BE7E6 /* NEOTestPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEOTestPod.h; sourceTree = "<group>"; };
+		D8D7290C1E5D86CB000BE7E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D729111E5D86CB000BE7E6 /* NEOTestPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEOTestPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D729161E5D86CB000BE7E6 /* NEOTestPodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEOTestPodTests.m; sourceTree = "<group>"; };
+		D8D729181E5D86CB000BE7E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D729231E5D871E000BE7E6 /* NEOStringFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NEOStringFormatter.h; path = Classes/NEOStringFormatter.h; sourceTree = "<group>"; };
+		D8D729241E5D871E000BE7E6 /* NEOStringFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NEOStringFormatter.m; path = Classes/NEOStringFormatter.m; sourceTree = "<group>"; };
+		E0EBB64B224ADC7B5190DF1E /* Pods-NEOTestPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEOTestPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEOTestPod/Pods-NEOTestPod.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D729041E5D86CB000BE7E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A65F00AB57042D6FA6F603FD /* libPods-NEOTestPod.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D7290E1E5D86CB000BE7E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D729121E5D86CB000BE7E6 /* NEOTestPod.framework in Frameworks */,
+				0EFE2BBEA9700B7B3B3B2BBB /* libPods-NEOTestPodTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C8842C975568896B440EDED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0EBB64B224ADC7B5190DF1E /* Pods-NEOTestPod.debug.xcconfig */,
+				BA59517B943A2E8BAFE2C52E /* Pods-NEOTestPod.release.xcconfig */,
+				30CF174DD5A695CD90B98F7F /* Pods-NEOTestPodTests.debug.xcconfig */,
+				C0854667904C76FDBC8BFE6A /* Pods-NEOTestPodTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFCE796DC555D889CE5FFE5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CB889F594A794409A631D05 /* libPods-NEOTestPod.a */,
+				7445534321E27207BAAC1784 /* libPods-NEOTestPodTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D728FE1E5D86CB000BE7E6 = {
+			isa = PBXGroup;
+			children = (
+				D8D729221E5D8704000BE7E6 /* Classes */,
+				D8D7290A1E5D86CB000BE7E6 /* NEOTestPod */,
+				D8D729151E5D86CB000BE7E6 /* NEOTestPodTests */,
+				D8D729091E5D86CB000BE7E6 /* Products */,
+				3C8842C975568896B440EDED /* Pods */,
+				CFCE796DC555D889CE5FFE5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D729091E5D86CB000BE7E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D729081E5D86CB000BE7E6 /* NEOTestPod.framework */,
+				D8D729111E5D86CB000BE7E6 /* NEOTestPodTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D7290A1E5D86CB000BE7E6 /* NEOTestPod */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7290B1E5D86CB000BE7E6 /* NEOTestPod.h */,
+				D8D7290C1E5D86CB000BE7E6 /* Info.plist */,
+			);
+			path = NEOTestPod;
+			sourceTree = "<group>";
+		};
+		D8D729151E5D86CB000BE7E6 /* NEOTestPodTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8D729161E5D86CB000BE7E6 /* NEOTestPodTests.m */,
+				D8D729181E5D86CB000BE7E6 /* Info.plist */,
+			);
+			path = NEOTestPodTests;
+			sourceTree = "<group>";
+		};
+		D8D729221E5D8704000BE7E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8D729231E5D871E000BE7E6 /* NEOStringFormatter.h */,
+				D8D729241E5D871E000BE7E6 /* NEOStringFormatter.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D8D729051E5D86CB000BE7E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D729191E5D86CB000BE7E6 /* NEOTestPod.h in Headers */,
+				D8D729251E5D871E000BE7E6 /* NEOStringFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D8D729071E5D86CB000BE7E6 /* NEOTestPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D7291C1E5D86CB000BE7E6 /* Build configuration list for PBXNativeTarget "NEOTestPod" */;
+			buildPhases = (
+				91F75BEC5E10CE7BE2C750BB /* [CP] Check Pods Manifest.lock */,
+				D8D729031E5D86CB000BE7E6 /* Sources */,
+				D8D729041E5D86CB000BE7E6 /* Frameworks */,
+				D8D729051E5D86CB000BE7E6 /* Headers */,
+				D8D729061E5D86CB000BE7E6 /* Resources */,
+				42F7591B9D7C1553A497717A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEOTestPod;
+			productName = NEOTestPod;
+			productReference = D8D729081E5D86CB000BE7E6 /* NEOTestPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8D729101E5D86CB000BE7E6 /* NEOTestPodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D7291F1E5D86CB000BE7E6 /* Build configuration list for PBXNativeTarget "NEOTestPodTests" */;
+			buildPhases = (
+				4000842DF0237C31F78E0B93 /* [CP] Check Pods Manifest.lock */,
+				D8D7290D1E5D86CB000BE7E6 /* Sources */,
+				D8D7290E1E5D86CB000BE7E6 /* Frameworks */,
+				D8D7290F1E5D86CB000BE7E6 /* Resources */,
+				D87832B6C5842832F0A18707 /* [CP] Embed Pods Frameworks */,
+				9F9C6153AF12E173D1114677 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D729141E5D86CB000BE7E6 /* PBXTargetDependency */,
+			);
+			name = NEOTestPodTests;
+			productName = NEOTestPodTests;
+			productReference = D8D729111E5D86CB000BE7E6 /* NEOTestPodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D728FF1E5D86CB000BE7E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Wirecard;
+				TargetAttributes = {
+					D8D729071E5D86CB000BE7E6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D8D729101E5D86CB000BE7E6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8D729021E5D86CB000BE7E6 /* Build configuration list for PBXProject "NEOTestPod" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8D728FE1E5D86CB000BE7E6;
+			productRefGroup = D8D729091E5D86CB000BE7E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D729071E5D86CB000BE7E6 /* NEOTestPod */,
+				D8D729101E5D86CB000BE7E6 /* NEOTestPodTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D729061E5D86CB000BE7E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D7290F1E5D86CB000BE7E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4000842DF0237C31F78E0B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42F7591B9D7C1553A497717A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEOTestPod/Pods-NEOTestPod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F75BEC5E10CE7BE2C750BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9C6153AF12E173D1114677 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEOTestPodTests/Pods-NEOTestPodTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87832B6C5842832F0A18707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEOTestPodTests/Pods-NEOTestPodTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D729031E5D86CB000BE7E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D729261E5D871E000BE7E6 /* NEOStringFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D7290D1E5D86CB000BE7E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D729171E5D86CB000BE7E6 /* NEOTestPodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8D729141E5D86CB000BE7E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D729071E5D86CB000BE7E6 /* NEOTestPod */;
+			targetProxy = D8D729131E5D86CB000BE7E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D8D7291A1E5D86CB000BE7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8D7291B1E5D86CB000BE7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8D7291D1E5D86CB000BE7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EBB64B224ADC7B5190DF1E /* Pods-NEOTestPod.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NEOTestPod/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johan.NEOTestPod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D8D7291E1E5D86CB000BE7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA59517B943A2E8BAFE2C52E /* Pods-NEOTestPod.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NEOTestPod/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johan.NEOTestPod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D8D729201E5D86CB000BE7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CF174DD5A695CD90B98F7F /* Pods-NEOTestPodTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NEOTestPodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johan.NEOTestPodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8D729211E5D86CB000BE7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0854667904C76FDBC8BFE6A /* Pods-NEOTestPodTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NEOTestPodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johan.NEOTestPodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D729021E5D86CB000BE7E6 /* Build configuration list for PBXProject "NEOTestPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D7291A1E5D86CB000BE7E6 /* Debug */,
+				D8D7291B1E5D86CB000BE7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D7291C1E5D86CB000BE7E6 /* Build configuration list for PBXNativeTarget "NEOTestPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D7291D1E5D86CB000BE7E6 /* Debug */,
+				D8D7291E1E5D86CB000BE7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8D7291F1E5D86CB000BE7E6 /* Build configuration list for PBXNativeTarget "NEOTestPodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D729201E5D86CB000BE7E6 /* Debug */,
+				D8D729211E5D86CB000BE7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D728FF1E5D86CB000BE7E6 /* Project object */;
+}
