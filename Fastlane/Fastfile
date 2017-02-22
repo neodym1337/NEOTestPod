@@ -1,9 +1,4 @@
 
-
-ENV["PODSPEC_PATH"] = "./NEOTestPod.podspec"
-ENV["POD_REPO"] = "neodym1337"
-ENV["POD_SOURCE"] = "https://github.com/neodym1337/ios-specs"
-
 default_platform :ios
 
 platform :ios do
