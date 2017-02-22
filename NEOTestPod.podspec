@@ -16,17 +16,27 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NEOTestPod"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of NEOTestPod."
+  s.version      = "0.0.2"
+  s.summary      = "Private cocoapod spec repo testbed."
+  s.module_name  = "NEOTestPod" 
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description  = "Private test pod with spec repo, just example code in this pod."
+
+  s.homepage     = "http://www.github.com/neodym1337"
+  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Private test pod with spec repo"
+  s.description  = "Objective-C template test pod."
 
-  s.homepage     = "http://EXAMPLE/NEOTestPod"
+  s.homepage     = "https://github.com/neodym1337"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +48,7 @@ Pod::Spec.new do |s|
   #
 
   #s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
