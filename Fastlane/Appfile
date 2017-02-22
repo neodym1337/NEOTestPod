@@ -1,3 +1,4 @@
-podspec_path "./NEOTestPod.podspec" #Path to podspec
-pod_repo "neodym1337" #Private repo name
-pod_source "https://github.com/neodym1337/ios-specs"
+
+ENV["PODSPEC_PATH"] = "./NEOTestPod.podspec"
+ENV["POD_REPO"] = "neodym1337"
+ENV["POD_SOURCE"] = "https://github.com/neodym1337/ios-specs"

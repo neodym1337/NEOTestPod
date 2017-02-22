@@ -1,1 +1,0 @@
-podspec_path "./NEOTestPod.podspec" #Path to podspec
