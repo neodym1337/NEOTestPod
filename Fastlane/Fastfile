@@ -1,0 +1,45 @@
+
+
+
+default_platform :ios
+
+platform :ios do
+
+    desc "Release a version of library"
+  
+    lane :release do 
+        # Make sure we start off with a clean slate   
+        ensure_git_status_clean
+
+        build_number   = get_build_number
+        version_number = get_version_number
+
+        puts "The Version is #{version_number} Build: #{build_number}"
+
+        #increment_build_number
+
+       # Set version number to the one at the top of the CHANGELOG
+        #readme = File.read("../docs/CHANGELOG.md")
+        #latest_version = readme.split("\n## ").first
+        #first_line = latest_version.split("\n").first
+        #version_number = first_line.split(" ")[1]
+
+        #build_number = Actions.lane_context[Actions::SharedValues::BUILD_NUMBER]
+
+        #increment_version_number version_number: version_number
+        #puts "The Version after increment  is #{version_number} Build: #{build_number}"
+
+        # Generate release notes from CHANGELOG
+        #release_notes = latest_version.split("\n")[1..-1].join("\n")
+
+
+
+        # Tag release and push to Git
+
+        ##puts "before testing"
+        ##commit_version_bump( {xcodeproj: "Bookatable.xcodeproj", message: "Deploying version #{version_number}.",force: true })
+        ##puts "after testingf"
+        ##add_git_tag tag: version_number
+        ##push_to_git_remote
+    end
+end
