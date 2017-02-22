@@ -7,39 +7,31 @@ platform :ios do
 
     desc "Release a version of library"
   
-    lane :release do 
+    lane :deploy do 
+
+        podspec_path = "./NEOTestPod.podspec"
         # Make sure we start off with a clean slate   
         ensure_git_status_clean
+        ensure_git_branch
 
-        build_number   = get_build_number
-        version_number = get_version_number
+        #Increment version of pod
+        version = version_bump_podspec(path: podspec_path)
 
-        puts "The Version is #{version_number} Build: #{build_number}"
+        #Check that we have a new tag
+        git_tag_exists(tag: version)
+        puts "Incremented version to: {version}"
 
-        #increment_build_number
+        #Commit and push podspec and tag changes
+        git_commit(path: podspec_path, message: "Bumped to version #{version}")
+        push_to_git_remote(remote_branch: 'master', force: false, tags: true)
 
-       # Set version number to the one at the top of the CHANGELOG
-        #readme = File.read("../docs/CHANGELOG.md")
-        #latest_version = readme.split("\n## ").first
-        #first_line = latest_version.split("\n").first
-        #version_number = first_line.split(" ")[1]
+        #Fetch tags locally
+        sh("git fetch --tags")
 
-        #build_number = Actions.lane_context[Actions::SharedValues::BUILD_NUMBER]
+        #Push pod
 
-        #increment_version_number version_number: version_number
-        #puts "The Version after increment  is #{version_number} Build: #{build_number}"
+        # If the podspec has a dependency on another private pod, then you will have to supply the sources you want the podspec to lint with for pod_push to succeed. Read more here - https://github.com/CocoaPods/CocoaPods/issues/2543.
+        pod_push(path: podspec_path, repo: "neodym1337", sources: "https://github.com/neodym1337/ios-specs")
 
-        # Generate release notes from CHANGELOG
-        #release_notes = latest_version.split("\n")[1..-1].join("\n")
-
-
-
-        # Tag release and push to Git
-
-        ##puts "before testing"
-        ##commit_version_bump( {xcodeproj: "Bookatable.xcodeproj", message: "Deploying version #{version_number}.",force: true })
-        ##puts "after testingf"
-        ##add_git_tag tag: version_number
-        ##push_to_git_remote
     end
 end
