@@ -29,9 +29,9 @@ xcode-select --install
 </table>
 # Available Actions
 ## iOS
-### ios release
+### ios deploy
 ```
-fastlane ios release
+fastlane ios deploy
 ```
 Release a version of library
 

@@ -31,7 +31,7 @@ platform :ios do
         #Push pod
 
         # If the podspec has a dependency on another private pod, then you will have to supply the sources you want the podspec to lint with for pod_push to succeed. Read more here - https://github.com/CocoaPods/CocoaPods/issues/2543.
-        pod_push(path: podspec_path, repo: "neodym1337", sources: "https://github.com/neodym1337/ios-specs")
+        pod_push(path: podspec_path, repo: "neodym1337", sources: ["https://github.com/neodym1337/ios-specs"])
 
     end
 end
