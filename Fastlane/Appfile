@@ -1,0 +1,3 @@
+podspec_path "./NEOTestPod.podspec" #Path to podspec
+pod_repo "neodym1337" #Private repo name
+pod_source "https://github.com/neodym1337/ios-specs"

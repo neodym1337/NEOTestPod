@@ -9,7 +9,8 @@ platform :ios do
   
     lane :deploy do 
 
-        podspec_path = "./NEOTestPod.podspec"
+        podspec_path = CredentialsManager::AppfileConfig.try_fetch_value(:podspec_path)
+        #podspec_path = "./NEOTestPod.podspec"
         # Make sure we start off with a clean slate   
         ensure_git_status_clean
         ensure_git_branch
@@ -36,7 +37,7 @@ platform :ios do
         #Push pod
 
         # If the podspec has a dependency on another private pod, then you will have to supply the sources you want the podspec to lint with for pod_push to succeed. Read more here - https://github.com/CocoaPods/CocoaPods/issues/2543.
-        pod_push(path: podspec_path, repo: "neodym1337", sources: ["https://github.com/neodym1337/ios-specs"])
+        pod_push(path: podspec_path, repo: CredentialsManager::AppfileConfig.try_fetch_value(:pod_repo), sources: [CredentialsManager::AppfileConfig.try_fetch_value(:pod_source)])
 
     end
 end
