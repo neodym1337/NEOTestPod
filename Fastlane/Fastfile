@@ -1,43 +1,39 @@
+# Set environment variables in .env file
 
 default_platform :ios
 
 platform :ios do
 
-    desc "Release a version of library"
+    desc "Release new version of cocoapods library"
 
+    # Helper lane so we don't always have to set --env param
     lane :deploy do
         sh "fastlane deploy_env --env test"
     end
   
     lane :deploy_env do 
 
-        #podspec_path = ENV["PODSPEC_PATH"]
-        #podspec_path = "./NEOTestPod.podspec"
         # Make sure we start off with a clean slate   
         ensure_git_status_clean
         ensure_git_branch
 
-        #Increment version of pod
+        # Increment version of pod
         version = version_bump_podspec(path: ENV["PODSPEC_PATH"])
 
-        #Check that we have a new tag
+        # Check that we have a new tag
         git_tag_exists(tag: version)
-        puts "Incremented version to: {version}"
+        puts "Incremented version to: #{version}"
 
-        #Commit and push podspec and tag changes
+        # Commit and push podspec and tag changes
         git_commit(path: ENV["PODSPEC_PATH"], message: "Bumped to version #{version}")
-        # Add tag (Here we could use github_release command when we have GitHub)
+        # Add tag and push (Here we could use github_release command when we have GitHub)
         add_git_tag(tag: version)
-
-
-
         push_to_git_remote(remote_branch: 'master', force: false, tags: true)
 
-        #Fetch tags locally
+        # Fetch tags locally
         sh("git fetch --tags")
 
-        #Push pod
-
+        # Push pod
         # If the podspec has a dependency on another private pod, then you will have to supply the sources you want the podspec to lint with for pod_push to succeed. Read more here - https://github.com/CocoaPods/CocoaPods/issues/2543.
         pod_push(path: ENV["PODSPEC_PATH"], repo: ENV["POD_REPO"], sources: [ENV["POD_SOURCE"]])
 

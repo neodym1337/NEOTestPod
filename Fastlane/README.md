@@ -34,6 +34,11 @@ xcode-select --install
 fastlane ios deploy
 ```
 Release a version of library
+### ios deploy_env
+```
+fastlane ios deploy_env
+```
+
 
 ----
 
