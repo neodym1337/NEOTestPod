@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/neodym1337/NEOTestPod.git", :tag => "#{s.version}" }
-
+  
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
