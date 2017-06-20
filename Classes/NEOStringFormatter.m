@@ -19,7 +19,7 @@
 }
 
 +(NSString *)testString3 {
-    return @"Test2";
+    return @"Test3";
 }
 
 @end
