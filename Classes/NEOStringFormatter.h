@@ -16,4 +16,6 @@
 
 +(NSString *)testString3;
 
++(NSString *)testString4;
+
 @end
