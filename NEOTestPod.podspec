@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NEOTestPod"
-  s.version      = "0.0.14"
+  s.version      = "0.0.15"
   s.summary      = "Private cocoapod."
   s.description  = "Private test pod with spec repo, just example code in this pod. Private test pod with spec repo, just example code in this pod. Private test pod with spec repo, just example code in this pod."
   s.homepage     = "http://www.github.com/neodym1337"
