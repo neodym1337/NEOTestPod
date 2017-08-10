@@ -18,4 +18,6 @@
 
 +(NSString *)testString4;
 
++(NSString *)testString5;
+
 @end
